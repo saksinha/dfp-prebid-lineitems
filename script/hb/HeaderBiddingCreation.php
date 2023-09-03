@@ -8,17 +8,18 @@ require __DIR__.'/../../customerConfigSample.php';
 
 use App\Scripts\HeaderBiddingScript;
 
-$applicationName = "Insideall - Test 1";
-$jsonKeyFilePath = "/home/gabriel/dfp/googleServiceAccount.json";
+$applicationName = "dfp21684858599-dhaka";
+$jsonKeyFilePath = "./googleServiceAccount.json";
 $scopes = "https://www.googleapis.com/auth/dfp";
-$impersonatedEmail = "insideall@headerbidding-199413.iam.gserviceaccount.com";
+$impersonatedEmail = "api-service@dfp21684858599.iam.gserviceaccount.com";
 
 
 $credentials = array(
-	"networkCode" => $networkCode,
-	"applicationName" => $applicationName,
-	"jsonKeyFilePath" => $jsonKeyFilePath,
-	"impersonatedEmail" => $impersonatedEmail  
+	"networkCode" => "21684858599",
+	"applicationName" => "dfp21684858599-dhaka",
+	"jsonKeyFilePath" => "./googleServiceAccount.json",
+	"impersonatedEmail" => "api-service@dfp21684858599.iam.gserviceaccount.com",
+	"scopes" => "https://www.googleapis.com/auth/dfp"
 );
 
 

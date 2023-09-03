@@ -3,19 +3,20 @@
 putenv('HOME='.dirname(__DIR__)."/../");
 require __DIR__.'/../../vendor/autoload.php';
 
-require __DIR__.'/../../customerConfig/234.php';
+// require __DIR__.'/../../customerConfig/234.php';
 
 
-$applicationName = "Insideall - Test 1";
+$applicationName = "dfp21684858599-dhaka";
 $jsonKeyFilePath = "/home/gabriel/dfp/googleServiceAccount.json";
 $scopes = "https://www.googleapis.com/auth/dfp";
-$impersonatedEmail = "insideall@headerbidding-199413.iam.gserviceaccount.com";
+$impersonatedEmail = "";
 
 $credentials = array(
-	"networkCode" => $networkCode,
-	"applicationName" => $applicationName,
-	"jsonKeyFilePath" => $jsonKeyFilePath,
-	"impersonatedEmail" => $impersonatedEmail
+	"networkCode" => "21684858599",
+	"applicationName" => "dfp21684858599-dhaka",
+	"jsonKeyFilePath" => "./googleServiceAccount.json",
+	"impersonatedEmail" => "api-service@dfp21684858599.iam.gserviceaccount.com",
+	"scopes" => "https://www.googleapis.com/auth/dfp"
 );
 
 $foo = new App\Scripts\AdsApiGenerator;
